@@ -1,6 +1,8 @@
 
+// unordered lis we'll be appending li's to dynamically
 const ul = document.getElementById('authors');
-const url = 'https://randomuser.me/api/?results=10';
+
+const url = 'https://randomuser.me/api/?results=500';
 
 fetch(url)
     .then((resp) => resp.json())
@@ -28,3 +30,4 @@ function createNode(element) {
 function append(parent, el) {
   return parent.appendChild(el);
 }
+
